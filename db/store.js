@@ -32,9 +32,10 @@ class Store {
         if (!title || !text ) {
             throw new Error('Title and text cannot be empty');
         }
-    const newNote = { title, text, id: uuidv1() }
+    const newNote = { title, text, id: uuidv1() };
 
-    return this.getNotes().then(notes => [...notes, newNote])
+    return this.getNotes()
+    .then(notes => [...notes, newNote])
     .then(updatedNotes => this.write(updatedNotes))
     .then(() => newNote)
     }
