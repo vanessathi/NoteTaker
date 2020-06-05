@@ -1,15 +1,29 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "vanessa pham",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "uuid": "^8.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanessathi/NoteTaker.git"
+  },
+  "keywords": [
+    "note",
+    "taker"
+  ],
+  "bugs": {
+    "url": "https://github.com/vanessathi/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/vanessathi/NoteTaker#readme"
 }
